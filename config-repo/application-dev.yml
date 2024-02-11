@@ -1,1 +1,5 @@
-application-dev.yml
+spring:
+  data:
+    mongodb:
+      uri : mongodb+srv://root:root@cluster0.chlwyy2.mongodb.net/
+      database : mongoDB
