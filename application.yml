@@ -1,6 +1,11 @@
-server:
-  port: 8083
+spring:
+  application:
+    name: Config-Default
 eureka:
- client:
-   serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    fetch-remote-regions-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
